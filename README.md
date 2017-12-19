@@ -4,7 +4,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 MapIt is a web app developed using Angular 2 and Angular Google Maps. The users can add and remove markers on the map and set those markers as draggable when adding them. Draggable markers can be dragged on the map. The markers persists on the browser using window.localStorage.
 
-##Live Demo
+## Live Demo
 
 Live demo is available [here](https://mapit-26143.firebaseapp.com/).
 
