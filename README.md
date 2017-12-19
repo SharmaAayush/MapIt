@@ -6,7 +6,7 @@ MapIt is a web app developed using Angular 2 and Angular Google Maps. The users 
 
 ## Live Demo
 
-Live demo is available [here](https://mapit-26143.firebaseapp.com/).
+Live demo is available <a target="_blank" href="https://mapit-26143.firebaseapp.com/">here</a>.
 
 ## Instructions to run locally
 
