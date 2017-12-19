@@ -41,6 +41,11 @@
             <agm-info-window>
               <strong>{{m.name}}</strong>
               <br>
+              <form (submit)="changeName(newMarkerName.value, m)">
+                <label>Change name to: </label>
+                <input type="text" #newMarkerName>
+              </form>
+              <br>
               <a class="delete" (click)="removeMarker(m)">Delete</a>
             </agm-info-window>
           

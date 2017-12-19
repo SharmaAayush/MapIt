@@ -18,6 +18,7 @@ export class AppComponent {
   markerLat:string;
   markerLng:string;
   markerDraggable:string;
+  newMarkerName:string;
   // Markers
   markers: marker[] = [];
 
@@ -80,6 +81,16 @@ export class AppComponent {
     }
 
     this._markerService.removeMarker(marker);
+  }
+
+  changeName(newMarkerName, marker){
+    for(var i = 0; i < this.markers.length; i++){
+      if(marker.lat == this.markers[i].lat && marker.lng == this.markers[i].lng){
+        this.markers[i].name = newMarkerName;
+      }
+    }
+
+    this._markerService.changeName(newMarkerName, marker);
   }
 }
 

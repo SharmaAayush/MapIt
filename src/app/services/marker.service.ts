@@ -77,6 +77,20 @@ export class MarkerService{
             }
         }
 
+        // Set localStorage markers again
+        localStorage.setItem('markers', JSON.stringify(markers));
+    }
+
+    changeName(newMarkerName, marker){
+        // Fetch markers
+        var markers = JSON.parse(localStorage.getItem('markers'));
+
+        for(var i = 0;i < markers.length;i++){
+            if(marker.lat == markers[i].lat && marker.lng == markers[i].lng){
+                markers[i].name = newMarkerName;
+                break;
+            }
+        }
         
         // Set localStorage markers again
         localStorage.setItem('markers', JSON.stringify(markers));
