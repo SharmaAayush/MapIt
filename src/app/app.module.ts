@@ -17,7 +17,7 @@ import { AppComponent } from './app.component';
     FormsModule,
     HttpModule,
     AgmCoreModule.forRoot({
-      apiKey: 'AIzaSyAl5XbMoP9naWkEO2pWDKC4eaamvYAGKP4'
+      apiKey: '<Your Google Maps Api Key>'
     })
   ],
   providers: [],
